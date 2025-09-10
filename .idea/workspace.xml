@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6050427-af45-4d9c-a670-ad4181b045b7" name="Changes" comment="initial training exercises">
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/Classes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/Fundamentals.java" afterDir="false" />
+    <list default="true" id="b6050427-af45-4d9c-a670-ad4181b045b7" name="Changes" comment="Learnt up to this keyword">
+      <change afterPath="$PROJECT_DIR$/src/main/java/trainingSecondPackage/Classes2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/training/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/Classes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/training/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +37,9 @@
     &quot;accountId&quot;: &quot;0439ff80-7091-4eaa-9fca-0f3c50602c6c&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="AISelfReview" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -45,24 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.training.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Code/Java/java-training&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Code/Java/java-training/src/main/java/demo/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.18237083&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.training.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "ToolWindow.GitHub Copilot Chat.ShowToolbar": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Code/Java/java-training",
+    "onboarding.tips.debug.path": "C:/Code/Java/java-training/src/main/java/demo/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "settings.editor.splitter.proportion": "0.18237083"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Code\Java\java-training" />
@@ -120,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755889971353</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Learnt up to this keyword">
+      <option name="closed" value="true" />
+      <created>1757090377262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757090377262</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,7 +149,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic setup" />
     <MESSAGE value="initial training exercises" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial training exercises" />
+    <MESSAGE value="Learnt up to this keyword" />
+    <option name="LAST_COMMIT_MESSAGE" value="Learnt up to this keyword" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
