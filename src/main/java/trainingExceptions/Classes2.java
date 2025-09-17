@@ -1,4 +1,4 @@
-package trainingSecondPackage;
+package trainingExceptions;
 
 public class Classes2 {
 

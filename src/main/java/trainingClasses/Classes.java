@@ -1,8 +1,8 @@
-package training;
+package trainingClasses;
 
 import java.util.Scanner;
 
-import trainingSecondPackage.*;
+import trainingExceptions.Classes2;
 
 public class Classes {
   public int x;
@@ -56,7 +56,7 @@ public class Classes {
   }
 
   public void callSecondPackage() {
-    Classes2 myObj = new trainingSecondPackage.Classes2();
+    Classes2 myObj = new trainingExceptions.Classes2();
   }
 }
 
@@ -66,6 +66,10 @@ abstract class People {
   public int age;
 
   public abstract void abstractMethod();
+
+  public void normalMethod() {
+    System.out.println("This is a normal method in abstract class People.");
+  }
 }
 
 class Student extends People {
@@ -77,7 +81,7 @@ class Student extends People {
   }
 
   public void abstractMethod() {
-    System.out.println("Abstract: abstractMethod is a method that can only be used in the subclass Student of Abstract class People!");
+    System.out.println("Abstract: abstractMethod is a method that can only be used in the subClass Student of Abstract class People!");
   }
 }
 
@@ -157,3 +161,83 @@ class OuterClass {
     int w = 7;
   }
 }
+
+interface Electronics {
+  int voltage = 220;
+
+  void powerOn();
+
+  void powerOff();
+}
+
+interface Tv {
+  // all methods in interface are abstract (only method names, no body)
+  void turnOn();
+
+  void turnOff();
+
+  void changeChannel(int channel);
+}
+
+class SmartTv implements Tv {
+  public void turnOn() {
+    System.out.println("The TV is on");
+  }
+
+  public void turnOff() {
+    System.out.println("The TV is off");
+  }
+
+  public void changeChannel(int channel) {
+    System.out.println("Channel changed to: " + channel);
+  }
+}
+
+class NonSmartTv implements Tv, Electronics {
+  public void powerOn() {
+    System.out.println("Powering On with voltage: " + voltage);
+  }
+
+  public void turnOn() {
+    System.out.println("The TV is on");
+  }
+
+  public void changeChannel(int channel) {
+    System.out.println("Channel changed to: " + channel);
+  }
+
+  public void turnOff() {
+    System.out.println("The TV is off");
+  }
+
+  public void powerOff() {
+    System.out.println("Powering Off");
+  }
+}
+
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH;
+}
+
+enum Level2 {
+  // Enum constants (each has its own description)
+  LOW("Low level"),
+  MEDIUM("Medium level"),
+  HIGH("High level");
+
+  // Field (variable) to store the description text
+  private String description;
+
+  // Constructor (runs once for each constant above)
+  private Level2(String description) {
+    this.description = description;
+  }
+
+  // Getter method to read the description
+  public String getDescription() {
+    return description;
+  }
+}
+
