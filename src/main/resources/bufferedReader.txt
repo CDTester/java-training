@@ -1,0 +1,3 @@
+buffered reader 1
+buffered reader 2
+buffered reader 3
