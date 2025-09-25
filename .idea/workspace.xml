@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6050427-af45-4d9c-a670-ad4181b045b7" name="Changes" comment="Learning file handling">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bufferedReader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bufferedWriter.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/copied_java.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fileInputStream.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fileOutputStream.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/java.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/myFile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/scanner.txt" afterDir="false" />
+    <list default="true" id="b6050427-af45-4d9c-a670-ad4181b045b7" name="Changes" comment="Learnt file handling">
+      <change afterPath="$PROJECT_DIR$/src/main/java/trainingDataStructures/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/trainingDataStructures/ds.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trainingFileHandling/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trainingFileHandling/Files.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trainingFileHandling/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trainingFileHandling/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +54,7 @@
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
     &quot;Application.training.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.trainingDataStructures.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.trainingFileHandling.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.trainingSecondPackage.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -94,13 +87,26 @@
       <command value="training.Main" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.trainingFileHandling.Main">
+  <component name="RunManager" selected="Application.trainingDataStructures.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="training.Main" />
       <module name="java-training" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="trainingClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="trainingDataStructures.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trainingDataStructures.Main" />
+      <module name="java-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trainingDataStructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,6 +142,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.trainingDataStructures.Main" />
         <item itemvalue="Application.trainingFileHandling.Main" />
         <item itemvalue="Application.trainingExceptions.Main" />
         <item itemvalue="Application.Main" />
@@ -191,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758103812255</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Learnt file handling">
+      <option name="closed" value="true" />
+      <created>1758213377689</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1758213377689</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,7 +238,8 @@
     <MESSAGE value="Learnt up to this keyword" />
     <MESSAGE value="Learnt up to Abstarction" />
     <MESSAGE value="Learning file handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Learning file handling" />
+    <MESSAGE value="Learnt file handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Learnt file handling" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
