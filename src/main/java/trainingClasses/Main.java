@@ -106,7 +106,7 @@ public class Main {
     System.out.println("The purpose of nested classes is to group classes that belong together, which makes your code more readable and maintainable.");
     System.out.println("To access the inner class, create an object of the outer class, and then create an object of the inner class:");
     OuterClass myOuter = new OuterClass();   // Create an object of the outer class
-    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    OuterClass.InnerClass myInner = new OuterClass.InnerClass();
     System.out.println("myInner.y = " + myInner.y + "; myOuter.x = " + myOuter.x + "; The sum of these values = " + (myInner.y + myOuter.x));
     System.out.println("\nInner classes can also be private or protected to hide them from other classes. PrivateInnerClass cannot be accessed outside of OuterClass.");
     OuterClass.StaticInnerClass myStaticInner = new OuterClass.StaticInnerClass();
@@ -159,6 +159,17 @@ public class Main {
     System.out.println("\nEnums can also have a constructor. The constructor is called automatically when the constants are created. You cannot call it yourself");
     Level2 myLevels = Level2.MEDIUM;
     System.out.println("Enum with Constructor: Level2 myLevels = " + myLevels.getDescription());
+
+    separator();
+    System.out.println("GENERIC CLASS");
+    System.out.println("Generic classes are defined with the use of angle brackets (<>), which hold the type parameter.");
+    Integer[] intNums = {10, 20, 30, 40, 50};
+    Double[] doubleNums = {10.5, 20.5, 30.5, 40.5, 50.5};
+
+    Stats<Integer> intStats = new Stats<>(intNums);
+    System.out.println("Generic Class Integer: intStats.getAverage() = " + intStats.average());
+    Stats<Double> doubleStats = new Stats<>(doubleNums);
+    System.out.println("Generic Class Double: doubleStats.getAverage() = " + doubleStats.average());
 
   }
 

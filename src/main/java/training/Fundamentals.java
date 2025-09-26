@@ -5,7 +5,7 @@ import java.time.LocalTime;
 import java.util.Arrays;
 
 public class Fundamentals {
-
+  @SuppressWarnings("all")
   public Fundamentals() {
     /* VARIABLES */
     variables();

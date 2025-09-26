@@ -21,6 +21,11 @@ public class Classes {
     this.y = consY;
   }
 
+  @Deprecated
+  static void oldMethod() {
+    System.out.println("This is a deprecated method.");
+  }
+
   // Static method
   static void myStaticMethod() {
     System.out.println("Static methods can be called without creating objects");
@@ -56,6 +61,7 @@ public class Classes {
   }
 
   public void callSecondPackage() {
+    @SuppressWarnings("unused")
     Classes2 myObj = new trainingExceptions.Classes2();
   }
 }
@@ -86,6 +92,7 @@ class Student extends People {
 }
 
 class Vehicle {
+  @SuppressWarnings("unused")
   protected String brand = "Ford";         // Vehicle attribute
   private int productionYear = 2020;       // This attribute can not be accessed by subclass Car
   protected String colour = "Black";
@@ -100,6 +107,7 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
+  @SuppressWarnings("hiding")
   private String modelName = "Mustang";    // Car attribute
   private String hornSound = "Beep, Beep!";
   private String colour = "Red";
@@ -134,26 +142,29 @@ class Animal {
 }
 
 class Pig extends Animal {
+  @Override
   public void animalSound() {
     System.out.println("The pig says: wee wee");
   }
 }
 
 class Dog extends Animal {
+  @Override
   public void animalSound() {
     System.out.println("The dog says: bow wow");
   }
 }
 
 class OuterClass {
+  @SuppressWarnings("unused")
   int x = 10;
   int a = new PrivateInnerClass().z;
 
-  class InnerClass {
+  static class InnerClass {
     int y = 5;
   }
 
-  private class PrivateInnerClass {
+  private static class PrivateInnerClass {
     int z = 3;
   }
 
@@ -218,11 +229,12 @@ class NonSmartTv implements Tv, Electronics {
 enum Level {
   LOW,
   MEDIUM,
-  HIGH;
+  HIGH
 }
 
 enum Level2 {
   // Enum constants (each has its own description)
+  @SuppressWarnings("unused")
   LOW("Low level"),
   MEDIUM("Medium level"),
   HIGH("High level");
@@ -241,3 +253,19 @@ enum Level2 {
   }
 }
 
+class Stats<T extends Number> {
+  // by extending Number, we can use any class that is a subclass of Number (like Integer, Double, Float, etc.)
+  T[] nums;
+
+  Stats(T[] nums) {
+    this.nums = nums;
+  }
+
+  double average() {
+    double sum = 0.0;
+    for (T num : nums) {
+      sum += num.doubleValue();
+    }
+    return sum / nums.length;
+  }
+}
