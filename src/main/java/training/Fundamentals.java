@@ -3,70 +3,11 @@ package training;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Fundamentals {
   @SuppressWarnings("all")
-  public Fundamentals() {
-    /* VARIABLES */
-    variables();
-
-    /* DATA TYPES */
-    dataTypes();
-
-    /* CASTING - assigning value of one primitive data type to another data type */
-    casting();
-
-    /* OPERATORS - performs operations on variables */
-    operators();
-
-    /* STRINGS - object that has methods */
-    strings();
-
-    /* MATH - Class with methods */
-    maths();
-
-    /* IF ELSE */
-    ifElse();
-
-    /* TERNARY OPERATOR */
-    ternary();
-
-    /* SWITCH */
-    switches(LocalDate.now());
-
-    /* WHILE LOOP */
-    whileLoop();
-
-    /* FOR LOOP */
-    forLoop();
-
-    /* METHODS */
-    System.out.println("\n");
-    System.out.println("Method with parameter");
-    ageChecker(17);
-    ageChecker(18);
-    ageChecker(19);
-
-    System.out.println("\n");
-    System.out.println("Method with return value");
-    System.out.println(percentage(8, 60) + "%");
-    System.out.println(percentage(43, 60) + "%");
-
-    System.out.println("\n");
-    System.out.println("Method overloading");
-    System.out.println(add(60, 9));
-    System.out.println(add(60.36f, 9.33f));
-    System.out.println(add("60", "9"));
-
-    /* RECURSION */
-    System.out.println("\n");
-    System.out.println("Method recursion");
-    int recResult = sum(15);
-    System.out.println(" = " + recResult);
-    int fact = 5;
-    System.out.println("Factorial of " + fact + " is " + factorial(fact));
-
-  }
 
   static void variables() {
     String name = "Chris";
@@ -372,4 +313,18 @@ public class Fundamentals {
     }
   }
 
+  static void regex(String regexp) {
+    String text = "Visit W3Schools!";
+    Pattern pattern = Pattern.compile(regexp, Pattern.CASE_INSENSITIVE);
+
+    Matcher match = pattern.matcher(text);
+
+    boolean matchFound = match.find();
+    if (matchFound) {
+      System.out.println("Pattern " + match.pattern() + " found [" + match.group() + "] in '" + text + "' at position " + match.start());
+    }
+    else {
+      System.out.println("Pattern " + match.pattern() + " not found in '" + text + "'");
+    }
+  }
 }

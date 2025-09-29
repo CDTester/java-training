@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6050427-af45-4d9c-a670-ad4181b045b7" name="Changes" comment="Learnt data structures and algorithms">
+    <list default="true" id="b6050427-af45-4d9c-a670-ad4181b045b7" name="Changes" comment="added annotations">
+      <change afterPath="$PROJECT_DIR$/src/main/java/trainingThreads/MainExtends.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/trainingThreads/MainImplements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/trainingThreads/ThreadEg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/training/Fundamentals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/Fundamentals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trainingClasses/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trainingClasses/Classes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trainingClasses/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trainingClasses/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trainingDataStructures/ds.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/training/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
+    "Application.MainExtends.executor": "Run",
+    "Application.MainImplements.executor": "Run",
     "Application.training.Main.executor": "Run",
     "Application.trainingClasses.Main.executor": "Run",
     "Application.trainingDataStructures.Main.executor": "Run",
@@ -90,7 +93,7 @@
       <command value="training.Main" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.trainingDataStructures.Main">
+  <component name="RunManager" selected="Application.MainImplements">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="training.Main" />
       <module name="java-training" />
@@ -104,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="trainingDataStructures.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="trainingDataStructures.Main" />
+    <configuration name="MainExtends" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trainingThreads.MainExtends" />
       <module name="java-training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="trainingDataStructures.*" />
+          <option name="PATTERN" value="trainingThreads.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +120,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="trainingExceptions.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="trainingExceptions.Main" />
+    <configuration name="MainImplements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trainingThreads.MainImplements" />
       <module name="java-training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="trainingExceptions.*" />
+          <option name="PATTERN" value="trainingThreads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="trainingDataStructures.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trainingDataStructures.Main" />
+      <module name="java-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trainingDataStructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,10 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainImplements" />
+        <item itemvalue="Application.MainExtends" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.trainingDataStructures.Main" />
         <item itemvalue="Application.trainingFileHandling.Main" />
-        <item itemvalue="Application.trainingExceptions.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758821729494</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added annotations">
+      <option name="closed" value="true" />
+      <created>1758903753049</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758903753049</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,7 +276,8 @@
     <MESSAGE value="Learning file handling" />
     <MESSAGE value="Learnt file handling" />
     <MESSAGE value="Learnt data structures and algorithms" />
-    <option name="LAST_COMMIT_MESSAGE" value="Learnt data structures and algorithms" />
+    <MESSAGE value="added annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added annotations" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
