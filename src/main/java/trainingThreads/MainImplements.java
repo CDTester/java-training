@@ -20,6 +20,8 @@ public class MainImplements implements Runnable {
     System.out.println("Main: " + amount);
     amount++;
     System.out.println("Main: " + amount);
+
+
   }
 
 

@@ -1,6 +1,12 @@
 package training;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.function.Consumer;
+
+interface MyLambdaInterface {
+  String run(String str);
+}
 
 public class Main {
 
@@ -86,7 +92,38 @@ public class Main {
     Fundamentals.regex("goto|w3schools"); //Find a match for ant one of the patterns separated by |
 
 
+    /*  LAMBDA */
+    System.out.println("\n");
+    System.out.println("LAMBDA");
+    System.out.println("Lambdas are often passed as arguments to methods. For example, you can use a lambda in the forEach() method of an ArrayList");
+    var numbersLambda = new ArrayList<Integer>();
+    numbersLambda.add(4);
+    numbersLambda.add(2);
+    numbersLambda.add(3);
+    numbersLambda.add(1);
+    numbersLambda.forEach((n) -> System.out.println(n));
+
+    System.out.println("\nA lambda expression can be stored in a variable. The variable's type must be an interface with exactly one method (a functional interface).");
+    System.out.println("The lambda must match that method's parameters and return type.");
+    Consumer<Integer> method = (n) -> {
+      System.out.println(n);
+    };
+    numbersLambda.forEach(method);
+
+    System.out.println("\nYou can also pass a lambda expression to a method. The method's parameter must be a functional interface.");
+    System.out.println("Calling the interface's method will then run the lambda expression.");
+    MyLambdaInterface exclaim = (s) -> s + "!";
+    MyLambdaInterface ask = (s) -> s + "?";
+    printFormatted("Hello", exclaim);
+    printFormatted("Hello", ask);
+
+
   }
 
+  public static void printFormatted(String str, MyLambdaInterface format) {
+    String result = format.run(str);
+    System.out.println(result);
+  }
 }
+
 
